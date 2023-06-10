@@ -154,9 +154,8 @@ fn main() {
 #![allow(dead_code)]
 #![allow(unused_imports)]
 
-use nalgebra::{Dynamic, Matrix, VecStorage};
-#[doc(inline)]
-pub type DMatrixf64 = Matrix<f64, Dynamic, Dynamic, VecStorage<f64, Dynamic, Dynamic>>;
+use nalgebra::{Dyn, Matrix, VecStorage};
+pub type DMatrixf64 = Matrix<f64, Dyn, Dyn, VecStorage<f64, Dyn, Dyn>>;
 #[doc(inline)]
 pub use std::f64::consts::PI;
 
